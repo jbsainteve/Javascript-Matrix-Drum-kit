@@ -50,7 +50,7 @@ class Symbol {
     this.text = this.characters.charAt(
       Math.floor(Math.random() * this.characters.length)
     );
-    context.fillStyle = "white";
+    context.fillStyle = gradient; // "green" //"white";
     context.fillText(this.text, this.x * this.fontSize, this.y * this.fontSize);
     if (this.y * this.fontSize > this.canvasHeight && Math.random() > 0.97) {
       this.y = 0;
